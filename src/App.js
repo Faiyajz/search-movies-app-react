@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const name = "Faiyaj Zaman";
+  const isNameShowing = true;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https:faiyajz.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Md. Faiyaj Zaman
-        </a>
-      </header>
+      <h1>hello {isNameShowing ? "Faiyaj True" : name}</h1>
+      {name ? (
+      <>{name}</>
+      ): (
+        <>
+          <h1>test</h1>
+          <h1>test </h1>
+        </>
+      
+      )}
     </div>
   );
 }
